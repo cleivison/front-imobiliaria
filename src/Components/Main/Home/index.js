@@ -237,7 +237,7 @@ function Home (props){
                                 // alt={`Imóvel código: ${item.codigo}`}
                                 // />
                                 <Image
-                                    src={base_url+'uploads/'+item.codigo+'/'+item.imagens[0]} 
+                                    src={'https://s3.us-west-1.wasabisys.com/wpimobiliaria/imoveis/imagens/'+item.codigo+'/'+item.imagens[0]} 
                                     alt={`Imóvel código: ${item.codigo}`}
                                     retry={{ count: 10, delay: 2 }}
                                 />

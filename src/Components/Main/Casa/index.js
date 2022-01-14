@@ -65,7 +65,7 @@ function Casa () {
                             <Carousel showArrows={true} showThumbs={false} emulateTouch={true}>       
                             {item.imagens.length > 0? item.imagens.map((imagem, chave) => (
                                 <div key={chave}>
-                                <img src={base_url+'uploads/'+item.codigo+'/'+imagem} className="center" alt="Ilustração"/>
+                                <img src={'https://s3.us-west-1.wasabisys.com/wpimobiliaria/imoveis/imagens/'+item.codigo+'/'+imagem} className="center" alt="Ilustração"/>
                                 </div>
                             ))
                             :

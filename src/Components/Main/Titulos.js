@@ -21,7 +21,8 @@ function Titulos(props) {
                 <div key={imovel.id}>
                   <img className="imgDestaque"
                     //src={imovel.imagens[0]} 
-                    src={base_url + 'uploads/' + imovel.codigo + '/' + imovel.imagens[0]}
+                    //src={base_url + 'uploads/' + imovel.codigo + '/' + imovel.imagens[0]}
+                    src={'https://s3.us-west-1.wasabisys.com/wpimobiliaria/imoveis/imagens/' + imovel.codigo + '/' + imovel.imagens[0]}
                     alt="Ilustração"
                   />
                 </div>

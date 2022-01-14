@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+
+  .imgDestaque {
+    max-width: 600px;
+  }

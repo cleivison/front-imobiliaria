@@ -1,0 +1,13 @@
+.icones{
+    margin: auto;
+    margin-right: 10px;    
+}
+.icones i{
+    font-size: 1.1rem;
+}
+.principalheader{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 30px;   
+}

@@ -1,0 +1,29 @@
+.principalmain{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;        
+    align-items: center;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+
+  .celulas{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .descricao{   
+    padding-right: 20px;
+    padding-left: 20px;  
+    padding-top: 20px;     
+  }
+  .descricaobaixo{   
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;    
+  }
+  .texto{    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;      
+    margin: 0 0 0 0;
+  }

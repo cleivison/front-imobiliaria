@@ -1,0 +1,25 @@
+.principalcontato{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.formulario{
+    text-align: left;   
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.titulocontato{
+    text-align: center;
+    width: 30%;
+    margin: auto; 
+    margin-top: 30px;   
+    padding: 10px;
+}
+.botaosalvar{
+    width: 100%;
+    margin-top: 15px;
+}

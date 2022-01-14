@@ -42,7 +42,7 @@ function CadastrarImovel(props){
         uid: key,
         name: imagem,
         status: 'done',
-        url: 'https://s3.us-west-1.wasabisys.com/wpimobiliaria/imoveis/imagens/'+state.imovel.codigo+'/'+imagem,
+        url: 'https://s3.us-west-1.wasabisys.com/wpimobiliaria/'+imagem,
         //url: base_url+'uploads/'+state.imovel.codigo+'/'+imagem,
     })) : []);
     const [tiposImovel, setTiposImovel] = useState([]);
@@ -97,7 +97,7 @@ function CadastrarImovel(props){
                     uid: key,
                     name: imagem,
                     status: 'done',
-                    url: 'https://s3.us-west-1.wasabisys.com/wpimobiliaria/imoveis/imagens/'+res.data.codigo+'/'+imagem,
+                    url: 'https://s3.us-west-1.wasabisys.com/wpimobiliaria/'+res.data.codigo+'/'+imagem,
                     //url: base_url+'uploads/'+res.data.codigo+'/'+imagem,
                 }))
                 )

@@ -117,12 +117,12 @@ function CadastrarInquilino(props){
                 mensagem = 'Proprietário atualizado com sucesso!';
             }
     
-            if(res.status === 200){
+            if(res.status === 200 && !res.data.error){
                 history.replace('/dashboard/inquilinos', {
                     mensagem
                 })
             }else{
-                setMessage(res.error);
+                setMessage(res.data.message.errors);
                 setIsLoading(false);
             }
 
@@ -152,13 +152,13 @@ function CadastrarInquilino(props){
             </Row>
             <Row>
                 <Col>
-                    <TextField label="Nome" value={inputs.nome} onChange={(e) => setInputs({nome: e.target.value})} />
+                    <TextField label="Nome" value={inputs.nome} onChange={(e) => setInputs({nome: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="CPF" value={inputs.cpf} onChange={(e) => setInputs({cpf: e.target.value})} />
+                    <TextField label="CPF" value={inputs.cpf} onChange={(e) => setInputs({cpf: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="RG" value={inputs.rg} onChange={(e) => setInputs({rg: e.target.value})} />
+                    <TextField label="RG" value={inputs.rg} onChange={(e) => setInputs({rg: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
                     <TextField 
@@ -174,28 +174,28 @@ function CadastrarInquilino(props){
             </Row>
             <Row after>
                 <Col>
-                    <TextField label="Rua" value={inputs.rua} onChange={(e) => setInputs({rua: e.target.value})} />
+                    <TextField label="Rua" value={inputs.rua} onChange={(e) => setInputs({rua: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="Número" value={inputs.numero} onChange={(e) => setInputs({numero: e.target.value})} />
+                    <TextField label="Número" value={inputs.numero} onChange={(e) => setInputs({numero: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="Bairro" value={inputs.bairro} onChange={(e) => setInputs({bairro: e.target.value})} />
+                    <TextField label="Bairro" value={inputs.bairro} onChange={(e) => setInputs({bairro: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="Referencia" value={inputs.referencia} onChange={(e) => setInputs({referencia: e.target.value})} />
+                    <TextField label="Referencia" value={inputs.referencia} onChange={(e) => setInputs({referencia: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="CEP" value={inputs.cep} onChange={(e) => setInputs({cep: e.target.value})} />
+                    <TextField label="CEP" value={inputs.cep} onChange={(e) => setInputs({cep: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>
                 <Col>
-                    <TextField label="Cidade"  value={inputs.cidade}  onChange={(e) => setInputs({cidade: e.target.value})} />
+                    <TextField label="Cidade"  value={inputs.cidade}  onChange={(e) => setInputs({cidade: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>  
                 <Col>
-                    <TextField label="Estado" value={inputs.estado} onChange={(e) => setInputs({estado: e.target.value})} />
+                    <TextField label="Estado" value={inputs.estado} onChange={(e) => setInputs({estado: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>   
                 <Col>
-                    <TextField label="Telefone" value={inputs.telefone} onChange={(e) => setInputs({telefone: e.target.value})} />
+                    <TextField label="Telefone" value={inputs.telefone} onChange={(e) => setInputs({telefone: e.target.value})} role="presentation" autocomplete="off"/>
                 </Col>   
             </Row>
             <Row>

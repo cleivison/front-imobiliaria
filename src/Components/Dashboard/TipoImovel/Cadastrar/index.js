@@ -66,12 +66,12 @@ function CadastrarTipoImovel(props){
                 mensagem = 'Tipo de Imóvel atualizado com sucesso!';
             }
 
-            if(res.status === 200){
+            if(res.status === 200 && !res.data.error){
                 history.replace('/dashboard/tipoimovel', {
                     mensagem
                 })
             }else{
-                setMessage(res.error);
+                setMessage(res.data.message.errors);
                 setIsLoading(false);
             }
         } 

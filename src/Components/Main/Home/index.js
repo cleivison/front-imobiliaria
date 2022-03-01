@@ -75,7 +75,7 @@ function Home (props){
             link += 'page='+entities.pagination.current+'&';
             link += 'pageSize='+entities.pagination.pageSize;
             setLoading(true);
-            const res = await api.get(`imovel/pers?`+link);            
+            const res = await api.get(`imovel/pers?`+link);                 
             if(res.status === 200){
                 setEntities({
                     response : res.data.imoveis,
@@ -231,7 +231,7 @@ function Home (props){
                                 }                                                    
                             </Carousel>                             */}
                             <div>
-                            {item.imagens.length > 0? 
+                            {item.imagens?.length > 0? 
                                 // <img 
                                 // src={base_url+'uploads/'+item.codigo+'/'+item.imagens[0]} 
                                 // alt={`Imóvel código: ${item.codigo}`}

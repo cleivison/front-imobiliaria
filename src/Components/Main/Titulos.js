@@ -10,7 +10,7 @@ import { base_url } from '../../services/api';
 
 function Titulos(props) {
   const imoveis = props.props
-  console.log('imoveis', imoveis)
+  //console.log('imoveis', imoveis)
   return (
     <div className="center">
       <Carousel showArrows={true} showThumbs={false} showStatus={false} emulateTouch={true}>
